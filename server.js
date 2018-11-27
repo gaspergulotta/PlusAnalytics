@@ -22,7 +22,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
+app.use(favicon(path.join(__dirname,'favicon.ico')));
 
 // app.use((req, res, next) => {
 //     res.render('maint.hbs');
