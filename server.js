@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.render('home.hbs', {
+    res.render('about.hbs', {
         pageTitle: 'Plus Analytics - About Page'
     });
 });
