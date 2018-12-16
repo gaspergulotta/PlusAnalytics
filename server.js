@@ -28,7 +28,7 @@ app.use(favicon(path.join(__dirname,'favicon.ico')));
 //     res.render('maint.hbs');
 // });
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname + '/public')));
 
 hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear();
