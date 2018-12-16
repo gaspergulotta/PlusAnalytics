@@ -36,7 +36,7 @@ html {
 /* ----------------------------------------------------  */
 
 .row {
-    max-width:1140px;
+    max-width:1740px;
     margin: 0 auto 0 auto; 
 }
 
@@ -112,6 +112,7 @@ a:active {
     text-decoration: none; 
     border-radius: 200px;
     transition: background-color 0.35s, border 0.35s, color 0.35s;
+    font-size: 80%
 
 }
 
@@ -169,8 +170,9 @@ header {
 }
 
 .sign-in-bar img {
-    width: 45%;
+    width: 35%;
     height: auto;
+    margin-left: 20px;
 }
 
 .hero-text-box {

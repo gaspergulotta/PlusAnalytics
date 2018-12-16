@@ -47,8 +47,6 @@ app.get('/about', (req, res) => {
     });
 });
 
-console.log(nflFeed.teamRecord());
-
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });
