@@ -1,10 +1,10 @@
 const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
-const favicon = require('serve-favicon')
+const favicon = require('serve-favicon');
 const fs = require('fs');
 const port = process.env.PORT || 3000;
-
+const nflFeed = require('./mysportsfeed/football/nflFeed');
 var app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
@@ -46,6 +46,8 @@ app.get('/about', (req, res) => {
         pageTitle: 'Plus Analytics - About Page'
     });
 });
+
+console.log(nflFeed.teamRecord());
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
