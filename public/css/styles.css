@@ -41,7 +41,7 @@ html {
 }
 
 section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .box {
@@ -65,22 +65,13 @@ h1 {
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 150%;
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
 
-h2:after {
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;   
-    margin: 0 auto;
-    margin-top: 30px;
-}
 
 h3 {
     font-size: 100%;
@@ -179,6 +170,23 @@ header {
     text-align: center;
     margin: 18%;
 }
+
+/* ----------------------------------------------------  */
+/* FEATURES */
+/* ----------------------------------------------------  */
+
+.feature-text {
+    text-align: center;
+}
+
+.feature-text ion-icon {
+    font-size: 200%;
+    display:inline-block;
+    text-align:center;
+}
+
+
+
 
 /* ----------------------------------------------------  */
 /* FOOTER */

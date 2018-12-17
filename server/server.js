@@ -9,13 +9,16 @@ const {ObjectID} = require('mongodb');
 var {mongoose} = require('./db/mongoose');
 var {User} = require('./models/user');
 var app = express();
+//var morgan = require('morgan');
 
 hbs.registerPartials(__dirname + '/../views/partials');
 app.set('view engine', 'hbs');
 
+//app.use(morgan('combined'));
+
 app.use((req, res, next) => {
     var now = new Date().toString();
-    var log = `${now}: ${req.method} ${req.url}`;
+    var log = `${now}: ${req.ip} | ${req.User} | ${req.method} ${req.url}`;
     console.log(log);
     fs.appendFile('server.log', log + '\n', (err) => {
         if (err) {
